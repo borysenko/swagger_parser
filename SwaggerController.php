@@ -9,25 +9,17 @@
 namespace borysenko\swagger_parser;
 
 use Yii;
-use rest\modules\v1\Module;
 use rest\components\api\Controller;
 
 class SwaggerController extends Controller
 {
-    public $urlJson;
-
-    public function __construct($id, Module $module, array $config = [])
-    {
-        $this->urlJson = Yii::getAlias('@rest.domain') . '/swagger/main/json';
-
-        parent::__construct($id, $module, $config);
-    }
+    public $urlJson = '/swagger/main/json';
 
     public function actionIndex()
     {
         $get = Yii::$app->request->get();
 
-        $content = file_get_contents($this->urlJson);
+        $content = file_get_contents(Yii::getAlias('@rest.domain') . $this->urlJson);
 
         $arr = json_decode($content);
 
@@ -80,7 +72,7 @@ class SwaggerController extends Controller
 
     public function actionUrls()
     {
-        $content = file_get_contents($this->urlJson);
+        $content = file_get_contents(Yii::getAlias('@rest.domain') . $this->urlJson);
 
         $arr = json_decode($content);
 
