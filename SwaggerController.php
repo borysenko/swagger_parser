@@ -6,7 +6,7 @@
  * Time: 13:52
  */
 
-namespace rest\common\controllers;
+namespace borysenko\swagger_parser;
 
 use Yii;
 use rest\modules\v1\Module;
