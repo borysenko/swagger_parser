@@ -19,7 +19,7 @@
     }
   },
   "require": {
-    "borysenko/swagger_parser": "master"
+    "borysenko/swagger_parser": "dev-master"
   },
   "repositories": [
     {

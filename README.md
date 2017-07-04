@@ -4,7 +4,7 @@
 
 <pre>
 <code>
-composer require  borysenko/swagger_parser "master"
+composer require  borysenko/swagger_parser "dev-master"
 </code>
 </pre>
 
