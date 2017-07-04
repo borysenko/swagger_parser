@@ -1,0 +1,30 @@
+{
+  "name": "borysenko/swagger_parser",
+  "description": "swagger_parser Расширение для Yii 2",
+  "keywords": [
+    "swagger_parser", "Yii2 swagger_parser"
+  ],
+  "homepage": "https://github.com/borysenko/swagger_parser",
+  "type": "yii2-extension",
+  "minimum-stability":"stable",
+  "authors": [
+    {
+      "name": "Pavel Borysenko",
+      "email": "pavel.borysenko@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "borysenko\\swagger_parser\\": ""
+    }
+  },
+  "require": {
+    "borysenko/swagger_parser": "master"
+  },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/borysenko/swagger_parser.git"
+    }
+  ]
+}
